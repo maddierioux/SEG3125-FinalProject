@@ -14,8 +14,7 @@ function OrderConfirmation() {
     zipCode,
     phone,
     email,
-    customDetails,
-    inspirationImages,
+    customDetails, 
     cartItems,
   } = location.state;
 
