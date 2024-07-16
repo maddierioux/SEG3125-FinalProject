@@ -1,0 +1,146 @@
+.menu-page {
+  text-align: center;
+}
+
+.hero-section {
+  position: relative;
+  height: 500px; 
+  overflow: hidden; 
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.filters .filter-dropdown, .filters .sort-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filters label {
+  font-weight: bold;
+}
+
+.filters select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.filters p {
+  margin: 0;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Increased the minimum size */
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-item {
+  background-color: #fff;
+  padding: 30px; /* Increased the padding */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 1.1em; /* Increased font size */
+}
+
+.menu-item-image {
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  height: 250px; /* Increased the height */
+  overflow: hidden;
+  margin-bottom: 15px; /* Increased the margin */
+}
+
+.menu-item h3 {
+  margin: 15px 0; /* Increased the margin */
+}
+
+.menu-item p {
+  margin: 10px 0; /* Increased the margin */
+}
+
+.menu-item button {
+  background-color: #f08080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px; /* Increased the padding */
+  cursor: pointer;
+}
+
+#page-numbers {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#page-numbers li {
+  margin: 0 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+#page-numbers li.active {
+  background-color: #f08080;
+  color: white;
+  border-color: #f08080;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f08080;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-controls button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.quantity-controls span {
+  font-size: 16px;
+}

@@ -1,0 +1,129 @@
+.about-page {
+    text-align: center;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  
+  .about-info {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    max-width: 1200px;
+    font-size: 1.3em;
+  }
+  
+  .owner-photo img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .company-info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  
+  .contact-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .contact-item h3 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-us,
+  .meeting-section {
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .contact-us h2,
+  .meeting-section h2 {
+    text-align: center;
+  }
+  
+  .contact-us form,
+  .meeting-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    max-width: 550px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group .react-datepicker-wrapper {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .contact-us button,
+  .meeting-section button {
+    width: 100%;
+    padding: 15px;
+    background-color: #f8bbd0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .contact-us button:hover,
+  .meeting-section button:hover {
+    background-color: #e07070;
+  }
+
+  .faq-button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #f8bbd0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-button:hover {
+    background-color: #e07070;
+  }
+
+  
