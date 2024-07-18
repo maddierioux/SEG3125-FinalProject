@@ -3,12 +3,11 @@ import './FAQ.css';
 
 const faqs = [
   { id: 1, question: 'What are your opening hours?', answer: 'We are open Monday to Friday from 9:00 AM to 9:00 PM and on weekends from 10:00 AM to 8:00 PM.' },
-  { id: 2, question: 'Do you offer vegan or gluten-free options?', answer: 'Yes, we have a selection of vegan and gluten-free products available. Please check our menu for more details.' },
-  { id: 3, question: 'How can I place an order?', answer: 'You can place an order through our website or by calling us at +1 (84) 546-6789.' },
-  { id: 4, question: 'Do you deliver?', answer: 'Yes, we offer delivery services within a 10-mile radius of our bakery.' },
+  { id: 2, question: 'Do you offer vegan or gluten-free options?', answer: 'Yes, we have a selection of vegan and gluten-free products available. Please contact us for more details. ' },
+  { id: 3, question: 'How can I place an order?', answer: 'You can place an order through our website or by calling us at +1 705-999-0102.' },
+  { id: 4, question: 'Do you deliver?', answer: 'Yes, we offer delivery services within our city!.' },
   { id: 5, question: 'Can I customize my order?', answer: 'Yes, we offer customization options for many of our products. Please contact us to discuss your requirements.' },
-  { id: 6, question: 'What payment methods do you accept?', answer: 'We accept all major credit cards, PayPal, and cash for in-store purchases.' },
-  { id: 7, question: 'Do you have a loyalty program?', answer: 'Yes, we offer a loyalty program for our regular customers. Please ask in-store for more details.' },
+  { id: 6, question: 'What payment methods do you accept?', answer: 'We accept all major credit cards and cash for in-store purchases.' },
   { id: 8, question: 'Can I cancel or change my order?', answer: 'Yes, you can cancel or change your order within 24 hours of placing it. Please contact us as soon as possible.' },
   { id: 9, question: 'What is your return policy?', answer: 'We do not accept returns on food items, but if there is an issue with your order, please contact us and we will do our best to resolve it.' },
   { id: 10, question: 'Do you offer catering services?', answer: 'Yes, we offer catering services for events and parties. Please contact us to discuss your needs.' },

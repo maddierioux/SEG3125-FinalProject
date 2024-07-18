@@ -8,10 +8,18 @@ import Cart from './pages/Cart';
 import FAQ from './pages/FAQ';
 import Checkout from './pages/Checkout';
 import OrderConfirmation from './pages/OrderConfirmation';
-import {CartProvider } from './context/CartContext';
+import { CartProvider } from './context/CartContext';
+import { useTranslation } from 'react-i18next';
+import './i18n';
 import './App.css';
 
 function App() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <CartProvider>
       <Router>
@@ -29,7 +37,7 @@ function App() {
                       to="/"
                       className={({ isActive }) => (isActive ? 'underline' : undefined)}
                     >
-                      Home
+                      {t('home')}
                     </NavLink>
                   </li>
                   <li>
@@ -37,7 +45,7 @@ function App() {
                       to="/menu"
                       className={({ isActive }) => (isActive ? 'underline' : undefined)}
                     >
-                      Menu
+                      {t('menu')}
                     </NavLink>
                   </li>
                   <li>
@@ -45,7 +53,7 @@ function App() {
                       to="/reviews"
                       className={({ isActive }) => (isActive ? 'underline' : undefined)}
                     >
-                      Reviews
+                      {t('reviews')}
                     </NavLink>
                   </li>
                   <li>
@@ -53,7 +61,7 @@ function App() {
                       to="/about"
                       className={({ isActive }) => (isActive ? 'underline' : undefined)}
                     >
-                      About
+                      {t('about')}
                     </NavLink>
                   </li>
                   <li>
@@ -61,10 +69,12 @@ function App() {
                       to="/cart"
                       className={({ isActive }) => (isActive ? 'underline' : undefined)}
                     >
-                      Cart
+                      {t('cart')}
                     </NavLink>
                   </li>
                 </ul>
+                <button onClick={() => changeLanguage('en')}>English</button>
+                <button onClick={() => changeLanguage('fr')}>Français</button>
               </nav>
             </div>
           </header>
@@ -82,11 +92,11 @@ function App() {
           </main>
           <footer>
             <div className="footer-content">
-              <h3>Cake Walk Bakery</h3>
-              <p>1234 Shortcake Lane</p>
-              <p>Cake City, Canada</p>
-              <p>705-999-0102</p>
-              <p>cakewalkbakery@gmail.com</p>
+              <h3>{t('welcome')}</h3>
+              <p>{t('footer_address')}</p>
+              <p>{t('footer_city')}</p>
+              <p>{t('footer_phone')}</p>
+              <p>{t('footer_email')}</p>
               <div className="social-links">
                 <i className="fab fa-instagram"></i>
                 <i className="fab fa-facebook"></i>
@@ -100,4 +110,3 @@ function App() {
 }
 
 export default App;
-
